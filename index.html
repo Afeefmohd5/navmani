@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset=" utf-8" />
+  <title>Navmani</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta content="" name="keywords" />
+  <meta content="" name="description" />
+  <link rel="icon" type="image/png" href="./img/jewlogo.jpg" />
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet" />
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!-- tailwind cdn  -->
+  <link href="css/style.css" rel="stylesheet" />
+  <style>
+    @media (max-width: 768px) {
+      #videContainer {
+        width: 20rem !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+  <!-- Spinner End -->
+
+  <!-- Navbar start -->
+  <style>
+    .top-Navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .phone-top {
+      font-size: smaller;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-bottom: .2rem !important;
+    }
+
+    @media (max-width: 768px) {
+      .top-Navbar {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+      }
+    }
+  </style>
+  <div class="container-fluid nav-bar shadow-lg border-dark border-bottom " style="position: fixed; z-index: 122;">
+    <div class="top-Navbar">
+      <p class="phone-top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-telephone" viewBox="0 0 16 16">
+          <path
+            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+        </svg>8105022111</p>
+      <p class="phone-top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-telephone" viewBox="0 0 16 16">
+          <path
+            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+        </svg>8105088600</p>
+      <div>
+        <small class="far fa-envelope-open me-2"></small>
+        <span style="font-size: smaller;">E-mail:</span><a style="font-size: smaller;"
+          href="mailto:navamani1316@gmail.com ">
+          navamani1316@gmail.com </a> <br>
+      </div>
+      
+
+    </div>
+
+    <div class="container">
+      <nav class="navbar navbar-light navbar-expand-lg py-4">
+        <a href="index.html" class="navbar-brand">
+          <!-- <h1 class="text-primary fw-bold mb-0">
+              Sync<span class="text-dark">roots</span>
+            </h1> -->
+          <img class="syncrootsLogo" src="img/jewlogo-removebg-preview.png" alt="" />
+          <div></div>
+        </a>
+        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars text-primary"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-auto">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <!-- <a href="event.html" class="nav-item nav-link">Events</a>
+              <a href="menu.html" class="nav-item nav-link">Menu</a> -->
+            <!-- <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Pages</a
+                >
+                <div class="dropdown-menu bg-light">
+                  <a href="book.html" class="dropdown-item">Booking</a>
+                  <a href="blog.html" class="dropdown-item">Our Blog</a>
+                  <a href="team.html" class="dropdown-item">Our Team</a>
+                  <a href="testimonial.html" class="dropdown-item"
+                    >Testimonial</a
+                  >
+                  <a href="404.html" class="dropdown-item">404 Page</a>
+                </div>
+              </div> -->
+            <a href="blog.html" class="nav-item nav-link">Our Blog</a>
+            <!-- <a href="team.html" class="nav-item nav-link">Our Team</a> -->
+          </div>
+          <!-- <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
+          <a href="contact.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Contact
+            us</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Navbar End -->
+
+  <!-- Modal Search Start -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Search by keyword
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center">
+          <div class="input-group w-75 mx-auto d-flex">
+            <input type="search" class="form-control bg-transparent p-3" placeholder="keywords"
+              aria-describedby="search-icon-1" />
+            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Search End -->
+
+  <!-- Hero Start -->
+  <div class="container-fluid hero-Section bg-light py-5  mt-0 mb-0" style="background: url('./img/pexels-enginakyurt-1458867.jpg') no-repeat center center; background-size: cover; height: 100vh; display: flex;
+    align-items: center; justify-content: center;">
+    <div class="container bg-filter bg-blur py-6"
+      >
+      <div class="row g-5 align-items-center mx-auto flex justify-content-center align-items-center text-center">
+        <div class="col-lg-7 col-md-12">
+          <small
+            class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome
+            to Navamani</small>
+          <h1 class="display-1 mb-4 animated bounceInDown headerText" style=" color: #ffffff;">
+            "Celebrating the Power of Nine Beads — Where Tradition Meets Timeless Elegance in Every Piece of Jewelry."
+          </h1>
+          <div class="d-flex align-items-center justify-content-center">
+
+            <a href="./contact.html"
+              class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Contact us</a>
+            <a href="./about.html"
+              class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know More</a>
+          </div>
+        </div>
+        <!-- <div class="col-lg-5 col-md-12">
+            <img
+              src="img/millet-here.png"
+              class="img-fluid rounded animated zoomIn"
+              alt=""
+            />
+          </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- Hero End -->
+
+  <!-- About Satrt -->
+  <div class="container-fluid py-6" style="background: var(--gradient2)" ;>
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+          <img src="img/pexels-vedat-29043373.jpg" class="img-fluid rounded" alt="" />
+        </div>
+        <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
+          <small
+            class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">About
+            Us</small>
+          <h1 class="display-5 mb-4">Trusted By 200 + satisfied clients</h1>
+          <p> At <span class="text-dark">NAVMANI</span>,
+            <span class="text-dark">
+              Established in 2020, Navamani draws inspiration from the meaning of its name—Nine Beads—believed to offer protection, positive energy, and emotional balance. We specialize in traditional imitation jewelry and accessories that reflect cultural richness and timeless elegance. Every piece is crafted with care to blend beauty and meaning. With a commitment to quality and style, we proudly serve customers across India.
+            </span>
+              
+          </p>
+
+       
+          <div class="row g-2 text-dark mb-5">
+            <div class="col-sm-6">
+              <i class="fas fa-seedling text-primary me-2"></i>Founded in 2020
+            </div>
+            <div class="col-sm-6">
+              <i class="fas fa-leaf text-primary me-2"></i>Inspired by tradition
+            </div>
+            <div class="col-sm-6">
+              <i class="fas fa-utensils text-primary me-2"></i>Imitation jewelry
+            </div>
+            <div class="col-sm-6">
+              <i class="fas fa-heart text-primary me-2"></i>Pan-India delivery
+            </div>
+          </div>
+          <a href="./about.html" class="btn btn-primary py-3 px-5 rounded-pill">About Us<i
+              class="fas fa-arrow-right ps-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <!-- video Start-->
+  <!-- <div
+      class="container-fluid faqt py-6"
+      style="
+        background-image: url('https://sc0.blr1.cdn.digitaloceanspaces.com/article/187958-mrdbbawngb-1678797562.jpg');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        padding: 0;
+        height: 35rem;
+      "
+    >
+      <div
+        class="dark-layer"
+        style="
+          /* background-color: rgba(125, 125, 125, 0.308); */
+
+          width: 100%;
+          height: 100%;
+        "
+      >
+        <div
+          class="container d-flex align-items-center mx-auto justify-content-center h-100 w-100"
+        >
+          <div
+            class="row g-4 align-items-center"
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: auto;
+            "
+          >
+            <div class="col-lg-7">
+              <!-- <div class="row g-4"> -->
+  <!-- <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.3s>
+                <div class="faqt-item bg-primary rounded p-4 text-center">
+                  <i class="fas fa-seedling fa-4x mb-4 text-white"></i>
+                  <h1 class="display-4 fw-bold" data-toggle="counter-up">
+                    689
+                  </h1>
+                  <p class="text-dark text-uppercase fw-bold mb-0">
+                    Millet Varieties
+                  </p>
+                </div>
+              </div> -->
+  <!-- <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.5s>
+                <div class="faqt-item bg-primary rounded p-4 text-center">
+                  <i class="fas fa-leaf fa-4x mb-4 text-white"></i>
+                  <h1 class="display-4 fw-bold" data-toggle="counter-up">
+                    107
+                  </h1>
+                  <p class="text-dark text-uppercase fw-bold mb-0">
+                    Organic Options
+                  </p>
+                </div>
+              </div> -->
+  <!-- <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.7s>
+                <div class="faqt-item bg-primary rounded p-4 text-center">
+                  <i class="fas fa-utensils fa-4x mb-4 text-white"></i>
+                  <h1 class="display-4 fw-bold" data-toggle="counter-up">
+                    253
+                  </h1>
+                  <p class="text-dark text-uppercase fw-bold mb-0">
+                    Easy to Cook
+                  </p>
+                </div>
+              </div> -->
+  <!-- </div> 
+            </div>
+            <div
+              id="videContainer"
+              class="row wow h-100 bounceInUp"
+              data-wow-delay="0.1s"
+              style="
+                width: 34rem;
+                box-shadow: 0px 0px 5px 5px rgb(255, 255, 255);
+                background-color: rgba(0, 0, 0, 0.532);
+                border-radius: 15px;
+                padding: 0;
+              "
+            >
+              <div class="video w-100 h-100">
+                <button
+                  type="button"
+                  class="btn btn-play"
+                  data-bs-toggle="modal"
+                  data-bs-target="#videoModal"
+                >
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- Modal Video -->
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.btn-close').addEventListener('click', function () {
+              var video = document.querySelector('iframe');
+              video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+            });
+          });
+        </script>
+        <div class="modal-body">
+          16:9 aspect ratio -->
+          <div class="ratio ratio-16x9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yJSUoUe_vlk?si=lzSei2SLimDKrXXQ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- video End -->
+  <!-- why choose us  -->
+  <style>
+    #choose-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      width: 70%;
+      height: 28rem;
+    }
+  </style>
+  <div id="choose-container">
+    <h1>
+      Why choose us?
+    </h1>
+    <div>
+      <ul>
+        <b style="color: black;">Culturally Inspired Designs</b>
+        <p>Every piece reflects the richness of Indian tradition and the symbolism of nine beads.</p>
+      </ul>
+      <ul>
+        <b style="color: black;">Quality You Can Trust</b>
+        <p>We offer finely crafted imitation jewelry with attention to detail and durability.</p>
+      </ul>
+      <ul>
+        <b style="color: black;">Affordable Elegance</b>
+        <p>Traditional charm made accessible without compromising on style or quality.</p>
+      </ul>
+      <ul>
+        <b style="color: black;">Nationwide Delivery</b>
+        <p>Prompt and reliable shipping across India, bringing beauty to your doorstep.</p>
+      </ul>
+    </div>
+    <a href="service.html" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a>
+
+
+  </div>
+  <!-- why choose us end  -->
+
+  <!-- top health key benefit  -->
+  <!-- <style>
+    #health-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    #health-box {
+      width: 22rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 5px solid rgb(137, 117, 8);
+      border-radius: 12px;
+      height: 15rem;
+      padding: 1rem;
+    }
+    #health-container :hover{
+      background-color: rgb(255, 255, 255);
+      color: black;
+    }
+
+    #main-health {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      gap: 1rem;
+    }
+
+    @media screen and (max-width:850px) {
+      #main-health{
+        display: flex;
+        flex-direction: column;
+      }
+      #health-container{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    
+  </style>
+  <section style="background: var(--gradient2); padding: 2rem;">
+    <div id="main-health">
+      <div
+        style="margin: auto; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 2rem; margin-top: 2rem;">
+        <h1>Top Health Benefits of Navmani</h1>
+        <p>Navmani are ancient super grains packed with essential nutrients, making them a powerhouse of health
+          benefits. They are gluten-free, rich in fiber, and a great source of plant-based protein. Here’s a detailed
+          look at their nutritional value and the advantages of including them in your diet:</p>
+      </div>
+      <div id="health-container">
+        <div id="health-box">
+          <h2> Promotes Digestive Health</h2>
+          <p>High fiber content helps prevent constipation
+            Supports healthy gut bacteria and improves digestion</p>
+        </div>
+        <div id="health-box">
+          <h2> Manages Diabetes & Controls Blood Sugar</h2>
+          <p>Low Glycemic Index (GI) helps in slow carbohydrate absorption
+            Prevents sudden blood sugar spikes, making it ideal for diabetics</p>
+        </div>
+        <div id="health-box">
+          <h2> Aids in Weight Loss & Management</h2>
+          <p>High fiber keeps you full for longer, reducing cravings
+            Low in calories and fat, helping with effective weight control</p>
+        </div>
+
+      </div>
+      <div id="health-container">
+        <div id="health-box">
+          <h2> Heart Health & Cholesterol Management</h2>
+          <p>Navmani help reduce bad cholesterol (LDL) and increase good cholesterol (HDL)
+            Rich in antioxidants and healthy fats that support cardiovascular health</p>
+        </div>
+        <div id="health-box">
+          <h2> Boosts Immunity & Fights Infections</h2>
+          <p>High levels of iron, zinc, and antioxidants strengthen the immune system
+            Helps in faster recovery from illnesses and infections</p>
+        </div>
+        <div id="health-box">
+          <h2> Strengthens Bones & Prevents Osteoporosis</h2>
+          <p>Ragi (Finger Millet) is especially rich in calcium, strengthening bones
+            Supports bone density and prevents bone-related disorders</p>
+        </div>
+      </div>
+      <div id="health-container">
+        <div id="health-box">
+          <h2> Enhances Skin & Hair Health</h2>
+          <p>Navmani are packed with essential amino acids that promote skin elasticity
+            Rich in antioxidants, delaying aging signs like wrinkles</p>
+        </div>
+        <div id="health-box">
+          <h2> Supports Sustainable & Eco-Friendly Living</h2>
+          <p>Navmani require minimal water and grow in harsh climates, reducing environmental strain
+            They promote biodiversity and sustainable agriculture</p>
+        </div>
+
+      </div>
+    </div>
+  </section> -->
+  <style>
+    .health-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      gap: 2rem;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 #9cb78e;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-front {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      color: white;
+      padding: .5rem;
+    }
+
+    .flip-card-back {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: .5rem;
+      background-color: #9cb78e;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    @media screen and (max-width:850px) {
+      .health-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <div
+    style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: auto; width: 70%; margin-top: 3rem; margin-bottom: 3rem;">
+    <h1>
+      What We Offer
+    </h1>
+    <p>
+   At Navamani, we go beyond just jewelry — we deliver meaning, tradition, and elegance through every piece. Our services are crafted to meet the unique tastes and needs of each customer, both in India and across the globe.
+    </p>
+  </div>
+  <div class="health-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h1>Traditional Imitation Jewelry</h1>
+        </div>
+        <div class="flip-card-back">
+          <p>Specializing in culturally inspired, elegant imitation jewelry and accessories.</p>
+          <!-- <p>We love that guy</p> -->
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h1>Nine Beads Collection</h1>
+        </div>
+        <div class="flip-card-back">
+          <p>Jewelry designed with nine-colored stones believed to enhance positivity and balance.</p>
+          <!-- <p>We love that guy</p> -->
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h1>Customized Jewelry Designs</h1>
+        </div>
+        <div class="flip-card-back">
+          <p> We tailor pearl and bead jewelry to match your style, needs, and expectations.</p>
+          <!-- <p>We love that guy</p> -->
+        </div>
+      </div>
+    </div>
+  </div> <br> <br>
+
+  <div class="health-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h1>Pan-India Delivery</h1>
+        </div>
+        <div class="flip-card-back">
+          <p>Reliable and timely shipping to every corner of India.</p>
+          <!-- <p>We love that guy</p> -->
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <h1>International Shipping</h1>
+        </div>
+        <div class="flip-card-back">
+          <p>Supplying our handcrafted pieces to customers abroad with care and commitment.
+
+</p>
+          <!-- <p>We love that guy</p> -->
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+  <!-- end of top health benefit  -->
+
+
+
+  <!-- Service Start -->
+  <div class="container-fluid service py-6"
+    style="background: url('img/fav.jpg') no-repeat center center; background-size: cover; margin-top: 3rem;">
+    <div class="container">
+      <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+        <small
+          class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our
+          Navmani Products</small>
+        <h1 class="display-5 mb-5" style="color: white; ">Explore Our Navmani products</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+          <div class="bg-light rounded service-item">
+            <div class="service-content d-flex align-items-center justify-content-center p-4">
+              <div class="service-content-icon   text-center">
+                <!-- <i class="fas fa-sun fa-7x text-primary mb-4"></i> -->
+                <h4 class="mb-3"> Navamani Navratna Necklace</h4>
+                <p class="mb-4">
+                  A stunning imitation necklace featuring nine colorful stones symbolizing the Navaratna (nine gems). Designed to bring positive energy and elegance to any outfit. Perfect for festive occasions or everyday wear.
+
+
+                </p>
+                <!-- <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+          <div class="bg-light rounded service-item">
+            <div class="service-content d-flex align-items-center justify-content-center p-4">
+              <div class="service-content-icon text-center">
+                <!-- <i class="fas fa-seedling fa-7x text-primary mb-4"></i> -->
+                <h4 class="mb-3">Pearl Harmony Bracelet </h4>
+                <p class="mb-4">
+                 Delicate pearl and bead bracelet customized to fit your wrist perfectly. This piece combines classic beauty with modern style, ideal for gifting or personal use.
+
+
+                </p>
+                <!-- <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+          <div class="bg-light rounded service-item">
+            <div class="service-content d-flex align-items-center justify-content-center p-4">
+              <div class="service-content-icon text-center">
+                <!-- <i class="fas fa-bread-slice fa-7x text-primary mb-4"></i> -->
+                <h4 class="mb-3">Eternal Elegance Earrings</h4>
+                <p class="mb-4">
+                  Traditional imitation earrings with intricate designs and multicolored beads. Lightweight and comfortable, these earrings add a touch of timeless grace to your ensemble.
+                </p>
+                <!-- <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
+          <div class="bg-light rounded service-item">
+            <div class="service-content d-flex align-items-center justify-content-center p-4">
+              <div class="service-content-icon text-center">
+                <!-- <i class="fas fa-utensils fa-7x text-primary mb-4"></i> -->
+                <h4 class="mb-3"> Balancing Beads Anklet</h4>
+                <p class="mb-4">
+                A handcrafted anklet featuring nine-colored beads believed to balance emotions and promote well-being. Adjustable and perfect for casual or ethnic wear.
+                </p>
+                <!-- <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.9s">
+          <div class="bg-light rounded service-item">
+            <div class="service-content d-flex align-items-center justify-content-center p-4">
+              <div class="service-content-icon text-center">
+                <!-- <i class="fas fa-utensils fa-7x text-primary mb-4"></i> -->
+                <h4 class="mb-3">Royal Ruby Ring</h4>
+                <p class="mb-4">
+                  A statement ring with a rich red imitation ruby surrounded by smaller accent stones. Symbolizes power and passion, designed to complement both traditional and contemporary outfits.
+                </p>
+                <!-- <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="service.html" class="btn btn-primary px-4 py-2  rounded-pill">Learn More</a>
+
+
+      </div>
+    </div>
+  </div>
+  <!-- Service End -->
+
+  
+
+  <!-- Book Us Start -->
+  <div class="container-fluid contact py-6 wow bounceInUp border" data-wow-delay="0.1s">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-1">
+          <img src="img/contact.jpg"
+            class="img-fluid h-100 w-100 rounded-start" style="object-fit: cover; opacity: 0.7;" alt="" />
+        </div>
+        <div class="col-10">
+          <div class="border-bottom border-top border-primary bg-light py-5 px-4">
+            <div class="text-center">
+              <small
+                class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Get
+                in Touch</small>
+              <h1 class="display-5 mb-5">Reach Out to Us</h1>
+            </div>
+            <div class="row g-4 form">
+              <div class="col-lg-6 col-md-6">
+                <input type="text" class="form-control border-primary p-2" placeholder="Your Name" />
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <input type="email" class="form-control border-primary p-2" placeholder="Your Email" />
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <input type="text" class="form-control border-primary p-2" placeholder="Your Phone Number" />
+              </div>
+              <!-- <div class="col-lg-6 col-md-6">
+                <input type="text" class="form-control border-primary p-2" placeholder="Your Address" />
+              </div> -->
+              <div class="col-lg-12 col-md-6">
+                <textarea class="form-control border-primary p-2" placeholder="Your Message" rows="3"></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <img
+            src="img/contact.jpg"
+            class="img-fluid h-100 w-100 rounded-end" style="object-fit: cover; opacity: 0.7;" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Book Us End -->
+
+  
+
+  <!-- Testimonial Start -->
+  <div class="container-fluid py-6" style="background: var(--gradient);">
+    <div class="container">
+      <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+        <small
+          class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Testimonial</small>
+        <h1 class="display-5 mb-5">What Our Customers says about Navmani!</h1>
+      </div>
+      <div class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-1 mb-4 wow bounceInUp"
+        data-wow-delay="0.1s">
+        <div class="testimonial-item rounded bg-light">
+          <div class="d-flex mb-3">
+            <i class="fas fa-user fa-5x text-primary me-4"></i>
+            <div class="position-absolute" style="top: 15px; right: 20px;">
+              <i class="fa fa-quote-right fa-2x"></i>
+            </div>
+            <div class="ps-3 my-auto">
+              <h4 class="mb-0">Ramesh Kumar</h4>
+              <p class="m-0">Millet Farmer</p>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <div class="d-flex">
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+            </div>
+            <p class="fs-5 m-0 pt-3">
+              Navmani have been a game-changer for my farm. The yield is
+              higher and the demand is increasing.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-item rounded bg-light">
+          <div class="d-flex mb-3">
+            <i class="fas fa-user fa-5x text-primary me-4"></i>
+            <div class="position-absolute" style="top: 15px; right: 20px;">
+              <i class="fa fa-quote-right fa-2x"></i>
+            </div>
+            <div class="ps-3 my-auto">
+              <h4 class="mb-0">Sarita Devi</h4>
+              <p class="m-0">Millet Consumer</p>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <div class="d-flex">
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+            </div>
+            <p class="fs-5 m-0 pt-3">
+              I've been consuming Navmani for a year now, and I can see the
+              positive impact on my health.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-item rounded bg-light">
+          <div class="d-flex mb-3">
+            <i class="fas fa-user fa-5x text-primary me-4"></i>
+            <div class="position-absolute" style="top: 15px; right: 20px;">
+              <i class="fa fa-quote-right fa-2x"></i>
+            </div>
+            <div class="ps-3 my-auto">
+              <h4 class="mb-0">Dr. Suresh</h4>
+              <p class="m-0">Nutritionist</p>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <div class="d-flex">
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+            </div>
+            <p class="fs-5 m-0 pt-3">
+              Navmani are a nutrient-rich food option that can benefit people
+              of all ages.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-item rounded bg-light">
+          <div class="d-flex mb-3">
+            <i class="fas fa-user fa-5x text-primary me-4"></i>
+            <div class="position-absolute" style="top: 15px; right: 20px;">
+              <i class="fa fa-quote-right fa-2x"></i>
+            </div>
+            <div class="ps-3 my-auto">
+              <h4 class="mb-0">Rajesh Agarwal</h4>
+              <p class="m-0">Millet Entrepreneur</p>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <div class="d-flex">
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+            </div>
+            <p class="fs-5 m-0 pt-3">
+              The demand for Navmani is increasing, and it's a great
+              opportunity for entrepreneurs like me.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div
+          class="owl-carousel testimonial-carousel testimonial-carousel-2 wow bounceInUp"
+          data-wow-delay="0.3s"
+        >
+          <div class="testimonial-item rounded bg-light">
+            <div class="d-flex mb-3">
+              <i class="fas fa-user fa-5x text-primary me-4"></i>
+              <div class="position-absolute" style="top: 15px; right: 20px;">
+                <i class="fa fa-quote-right fa-2x"></i>
+              </div>
+              <div class="ps-3 my-auto">
+                <h4 class="mb-0">Ramesh Kumar</h4>
+                <p class="m-0">Millet Farmer</p>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <div class="d-flex">
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+              </div>
+              <p class="fs-5 m-0 pt-3">
+                Navmani have been a game-changer for my farm. The yield is
+                higher and the demand is increasing.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-item rounded bg-light">
+            <div class="d-flex mb-3">
+              <i class="fas fa-user fa-5x text-primary me-4"></i>
+              <div class="position-absolute" style="top: 15px; right: 20px;">
+                <i class="fa fa-quote-right fa-2x"></i>
+              </div>
+              <div class="ps-3 my-auto">
+                <h4 class="mb-0">Sarita Devi</h4>
+                <p class="m-0">Millet Consumer</p>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <div class="d-flex">
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+              </div>
+              <p class="fs-5 m-0 pt-3">
+                I've been consuming Navmani for a year now, and I can see the
+                positive impact on my health.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-item rounded bg-light">
+            <div class="d-flex mb-3">
+              <i class="fas fa-user fa-5x text-primary me-4"></i>
+              <div class="position-absolute" style="top: 15px; right: 20px;">
+                <i class="fa fa-quote-right fa-2x"></i>
+              </div>
+              <div class="ps-3 my-auto">
+                <h4 class="mb-0">Dr. Suresh</h4>
+                <p class="m-0">Nutritionist</p>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <div class="d-flex">
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+              </div>
+              <p class="fs-5 m-0 pt-3">
+                Navmani are a nutrient-rich food option that can benefit people
+                of all ages.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-item rounded bg-light">
+            <div class="d-flex mb-3">
+              <i class="fas fa-user fa-5x text-primary me-4"></i>
+              <div class="position-absolute" style="top: 15px; right: 20px;">
+                <i class="fa fa-quote-right fa-2x"></i>
+              </div>
+              <div class="ps-3 my-auto">
+                <h4 class="mb-0">Rajesh Agarwal</h4>
+                <p class="m-0">Millet Entrepreneur</p>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <div class="d-flex">
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+              </div>
+              <p class="fs-5 m-0 pt-3">
+                The demand for Navmani is increasing, and it's a great
+                opportunity for entrepreneurs like me.
+              </p>
+            </div>
+          </div>1
+        </div> -->
+    </div>
+  </div>
+  <!-- Testimonial End -->
+
+  <!-- Blog Start -->
+  <!-- <div class="container-fluid blog py-6 border pb-0">
+    <div class="container">
+      <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+        <small
+          class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our
+          Blog</small>
+        <h1 class="display-5 mb-5">Stay Updated with the Latest News</h1>
+      </div>
+      <div class="row gx-4 justify-content-center">
+        <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
+          <div class="blog-item">
+            <div class="overflow-hidden rounded">
+              <img
+                src="https://images.livemint.com/img/2023/01/20/1140x641/Navmani_1_1674229730904_1674229758865_1674229758865.jpg"
+                class="img-fluid w-100" alt="" />
+            </div>
+            <div class="blog-content mx-4 d-flex rounded bg-light">
+              <div class="text-dark bg-primary rounded-start">
+                <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                  <p class="fw-bold mb-0">16</p>
+                  <p class="fw-bold mb-0">Sep</p>
+                </div>
+              </div>
+              <a href="#" class="h5 lh-base my-auto h-100 p-3">Unlock the Power of Navmani in Your Diet</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
+          <div class="blog-item">
+            <div class="overflow-hidden rounded">
+              <img src="https://greenstories.co.in/wp-content/uploads/2023/03/Dib-Navmani-benefits-edited_Navmani.jpeg"
+                class="img-fluid w-100" alt="" />
+            </div>
+            <div class="blog-content mx-4 d-flex rounded bg-light">
+              <div class="text-dark bg-primary rounded-start">
+                <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                  <p class="fw-bold mb-0">16</p>
+                  <p class="fw-bold mb-0">Sep</p>
+                </div>
+              </div>
+              <a href="#" class="h5 lh-base my-auto h-100 p-3">The Nutritional Benefits of Navmani</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
+          <div class="blog-item">
+            <div class="overflow-hidden rounded">
+              <img src="https://www.pharoscion.com/assets/img/blog_new/The_Goodness_of_Navmani_1..jpeg"
+                class="img-fluid w-100" alt="" />
+            </div>
+            <div class="blog-content mx-4 d-flex rounded bg-light">
+              <div class="text-dark bg-primary rounded-start">
+                <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
+                  <p class="fw-bold mb-0">16</p>
+                  <p class="fw-bold mb-0">Sep</p>
+                </div>
+              </div>
+              <a href="#" class="h5 lh-base my-auto h-100 p-3">Incorporating Navmani into Your Daily Meals</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- Blog End -->
+
+  <!-- Footer Start -->
+  <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <a href="/">
+              <img class="FooterLogo" src="./img/jewlogo.jpg" alt="" />
+            </a>
+            <p class="lh-lg mb-4">
+             Navamani—where tradition meets timeless elegance through the power of nine sacred beads.
+            </p>
+            <div class="footer-icon d-flex">
+              <a class="btn btn-primary btn-sm-square me-2 rounded-circle"
+                href="https://www.facebook.com/people/Navamani-Creations/100084371697757/?mibextid=ZbWKwL"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/navamani_creations/?igshid=YmMyMTA2M2Y%3D"
+                class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+              <!-- <a href="https://www.linkedin.com/in/syncroots-22896a318/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">Quick Links</h4>
+            <div class="d-flex flex-column align-items-start">
+              <a class="text-body mb-3" href="index.html"><i class="fa fa-home text-primary me-2"></i>Home</a>
+              <a class="text-body mb-3" href="./about.html"><i class="fa fa-info-circle text-primary me-2"></i>About</a>
+              <a class="text-body mb-3" href="./service.html"><i class="fa fa-cogs text-primary me-2"></i>Services</a>
+              <a class="text-body mb-3" href="./contact.html"><i
+                  class="fa fa-envelope text-primary me-2"></i>Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">Get in Touch</h4>
+            <div class="d-flex flex-column align-items-start">
+              <p>
+                <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                NAVAMANI CREATIONS 
+Banaswadi 
+Bangalore 
+Karnataka.<br>
+               
+
+              </p>
+              <p>
+                <i class="fa fa-phone-alt text-primary me-2"></i> 8105022111
+<br>
+                <i class="fa fa-phone-alt text-primary me-2"></i> 8105088600
+              </p>
+              <p>
+                <i class="fas fa-envelope text-primary me-2"></i>
+                <a href="mailto:navamani1316@gmail.com ">
+                  navamani1316@gmail.com 
+
+                </a>
+              </p>
+              <p>
+                <i class="fa fa-clock text-primary me-2"></i> 26/7 Hours
+                Service
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">Location</h4>
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe style="border-radius: 10px;" width="100%" height="100%" id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=123%20Street%2C%20New%20York%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-lg-3 col-md-6">
+            <div class="footer-item">
+              <h4 class="mb-4">Millet News</h4>
+              <div class="row g-2">
+                <div class="col-4">
+                  <img
+                    src="img/millet-news-01.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/millet-news-02.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/millet-news-03.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/millet-news-04.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/millet-news-05.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/millet-news-06.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright bg-dark py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Navmani</a>, All right
+            reserved.</span>
+        </div>
+        <div class="col-md-6 my-auto text-center text-md-end text-white">
+          <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+          <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+          <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+          Developed By
+          <a class="border-bottom" href="https://aspironkhuze.com/">Aspironkhuze Technologies Pvt. Ltd.</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-dark back-to-top" id="backToTop">
+    <i class="fa fa-angle-double-up"></i>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/+919755511107" class="btn btn-lg btn-success whatsapp-button">
+    <i class="fab fa-whatsapp" style="color: white;"></i>
+  </a>
+
+
+  <style>
+    /* Responsive Social Icons */
+    .social-btn {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      z-index: 1000;
+      width: 50px;
+      height: 50px;
+      display: none;
+      /* Hidden by default */
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Ensure buttons and elements don't break on small screens */
+    @media (max-width: 768px) {
+      .social-btn {
+        width: 30px;
+        height: 30px;
+      }
+
+      .back-to-top,
+      .whatsapp-button {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    @media (max-width: 576px) {
+
+      .back-to-top,
+      .whatsapp-button {
+        width: 40px;
+        height: 40px;
+      }
+
+      .whatsapp-button {
+        bottom: 15px;
+        right: 15px;
+      }
+    }
+  </style>
+
+  <script>
+    // Show the "Back to Top" button only when scrolled down
+    const backToTopButton = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) { // Show when scrolled down 100px
+        backToTopButton.style.display = 'flex';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+  </script>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

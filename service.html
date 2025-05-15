@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Navmani</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+ <link rel="icon" type="image/png" href="./img/jewlogo.jpg" />
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap"
+    rel="stylesheet">
+
+  <!-- Icon Font Stylesheet -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+    <div class="spinner-grow text-primary" role="status"></div>
+  </div>
+  <!-- Spinner End -->
+
+
+ <!-- Navbar start -->
+  <style>
+    .top-Navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .phone-top {
+      font-size: smaller;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-bottom: .2rem !important;
+    }
+
+    @media (max-width: 768px) {
+      .top-Navbar {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+      }
+    }
+  </style>
+  <div class="container-fluid nav-bar shadow-lg border-dark border-bottom " style="position: fixed; z-index: 122;">
+    <div class="top-Navbar">
+      <p class="phone-top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-telephone" viewBox="0 0 16 16">
+          <path
+            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+        </svg>8105022111</p>
+      <p class="phone-top"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="bi bi-telephone" viewBox="0 0 16 16">
+          <path
+            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+        </svg>8105088600</p>
+      <div>
+        <small class="far fa-envelope-open me-2"></small>
+        <span style="font-size: smaller;">E-mail:</span><a style="font-size: smaller;"
+          href="mailto:navamani1316@gmail.com ">
+          navamani1316@gmail.com </a> <br>
+      </div>
+      
+
+    </div>
+
+    <div class="container">
+      <nav class="navbar navbar-light navbar-expand-lg py-4">
+        <a href="index.html" class="navbar-brand">
+          <!-- <h1 class="text-primary fw-bold mb-0">
+              Sync<span class="text-dark">roots</span>
+            </h1> -->
+          <img class="syncrootsLogo" src="img/jewlogo-removebg-preview.png" alt="" />
+          <div></div>
+        </a>
+        <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse">
+          <span class="fa fa-bars text-primary"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav mx-auto">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="service.html" class="nav-item nav-link">Services</a>
+            <!-- <a href="event.html" class="nav-item nav-link">Events</a>
+              <a href="menu.html" class="nav-item nav-link">Menu</a> -->
+            <!-- <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Pages</a
+                >
+                <div class="dropdown-menu bg-light">
+                  <a href="book.html" class="dropdown-item">Booking</a>
+                  <a href="blog.html" class="dropdown-item">Our Blog</a>
+                  <a href="team.html" class="dropdown-item">Our Team</a>
+                  <a href="testimonial.html" class="dropdown-item"
+                    >Testimonial</a
+                  >
+                  <a href="404.html" class="dropdown-item">404 Page</a>
+                </div>
+              </div> -->
+            <a href="blog.html" class="nav-item nav-link">Our Blog</a>
+            <!-- <a href="team.html" class="nav-item nav-link">Our Team</a> -->
+          </div>
+          <!-- <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button> -->
+          <a href="contact.html" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Contact
+            us</a>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Navbar End -->
+
+
+  <!-- Modal Search Start -->
+  <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content rounded-0">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex align-items-center">
+          <div class="input-group w-75 mx-auto d-flex">
+            <input type="search" class="form-control bg-transparent p-3" placeholder="keywords"
+              aria-describedby="search-icon-1">
+            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Search End -->
+
+
+  <!-- Hero Start -->
+  <style>
+    #main-div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 30rem;
+    }
+   </style>
+  <div class="container-fluid bg-light py-6 my-6 mt-0" style="background: var(--gradient);" id="main-div">
+    <div class="container text-center animated bounceInDown">
+      <h1 class="display-1 mb-4">Services</h1>
+      <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
+        <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+        <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
+        <li class="breadcrumb-item text-dark" aria-current="page">Services</li>
+      </ol>
+    </div>
+  </div>
+  <!-- Hero End -->
+
+   <div class="container-fluid service py-6"
+    style="background: url('img/fav.jpg') no-repeat center center; background-size: cover; margin-top: 3rem;">
+    <div class="container">
+      <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+        <small
+          class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our
+          Navmani Products</small>
+        <h1 class="display-5 mb-5" style="color: white; ">Explore Our Navmani products</h1>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+          <div class="bg-light rounded service-item">
+            <div class="service-content d-flex align-items-center justify-content-center p-4">
+              <div class="service-content-icon   text-center">
+                <!-- <i class="fas fa-sun fa-7x text-primary mb-4"></i> -->
+                <h4 class="mb-3"> Navamani Navratna Necklace</h4>
+                <p class="mb-4">
+                  A stunning imitation necklace featuring nine colorful stones symbolizing the Navaratna (nine gems). Designed to bring positive energy and elegance to any outfit. Perfect for festive occasions or everyday wear.
+
+
+                </p>
+                <!-- <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+          <div class="bg-light rounded service-item">
+            <div class="service-content d-flex align-items-center justify-content-center p-4">
+              <div class="service-content-icon text-center">
+                <!-- <i class="fas fa-seedling fa-7x text-primary mb-4"></i> -->
+                <h4 class="mb-3">Pearl Harmony Bracelet </h4>
+                <p class="mb-4">
+                 Delicate pearl and bead bracelet customized to fit your wrist perfectly. This piece combines classic beauty with modern style, ideal for gifting or personal use.
+
+
+                </p>
+                <!-- <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+          <div class="bg-light rounded service-item">
+            <div class="service-content d-flex align-items-center justify-content-center p-4">
+              <div class="service-content-icon text-center">
+                <!-- <i class="fas fa-bread-slice fa-7x text-primary mb-4"></i> -->
+                <h4 class="mb-3">Eternal Elegance Earrings</h4>
+                <p class="mb-4">
+                  Traditional imitation earrings with intricate designs and multicolored beads. Lightweight and comfortable, these earrings add a touch of timeless grace to your ensemble.
+                </p>
+                <!-- <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.7s">
+          <div class="bg-light rounded service-item">
+            <div class="service-content d-flex align-items-center justify-content-center p-4">
+              <div class="service-content-icon text-center">
+                <!-- <i class="fas fa-utensils fa-7x text-primary mb-4"></i> -->
+                <h4 class="mb-3"> Balancing Beads Anklet</h4>
+                <p class="mb-4">
+                A handcrafted anklet featuring nine-colored beads believed to balance emotions and promote well-being. Adjustable and perfect for casual or ethnic wear.
+                </p>
+                <!-- <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.9s">
+          <div class="bg-light rounded service-item">
+            <div class="service-content d-flex align-items-center justify-content-center p-4">
+              <div class="service-content-icon text-center">
+                <!-- <i class="fas fa-utensils fa-7x text-primary mb-4"></i> -->
+                <h4 class="mb-3">Royal Ruby Ring</h4>
+                <p class="mb-4">
+                  A statement ring with a rich red imitation ruby surrounded by smaller accent stones. Symbolizes power and passion, designed to complement both traditional and contemporary outfits.
+                </p>
+                <!-- <a href="#" class="btn btn-primary px-4 py-2 rounded-pill">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="service.html" class="btn btn-primary px-4 py-2  rounded-pill">Learn More</a>
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Nati Ghee Modal -->
+  <div class="modal fade" id="modalNatiGhee" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <!-- Static Header -->
+        <div class="modal-header text-dark" style="position: sticky; top: 0; z-index: 1050;">
+          <h5 class="modal-title w-100 text-center">Nati Ghee - Pure & Traditional</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Scrollable Content -->
+        <div class="modal-body" style="max-height: 90vh; overflow-y: auto;">
+          <h4><strong>Description:</strong> Nati Ghee is made from pure cow milk using traditional methods to preserve
+            its rich aroma and nutrition.</h4>
+          <br>
+          <!-- Image Container -->
+          <div class="d-flex justify-content-center align-items-center flex-wrap">
+            <img
+              src="https://media.istockphoto.com/id/1216560737/photo/homemade-ghee-in-a-ceramic-pot-and-a-sticker-with-the-inscription-with-a-dead-leaf-on-an-old.webp?a=1&b=1&s=612x612&w=0&k=20&c=avTvVP-fHsoOAuduzS7Y_bD0Sdbl9QAKrgvdiEeIXsM="
+              class="rounded mb-3 mx-2" alt="Nati Ghee" style="height: 30%; width: 30%;">
+
+            <img
+              src="https://media.istockphoto.com/id/1413268611/photo/ghee-butter-oil.webp?a=1&b=1&s=612x612&w=0&k=20&c=t1C7Tzg3Ym0_bro9wV1JSwvELqpfQwqv5kpogbrMT3Q="
+              class="rounded mb-3 mx-2" alt="Nati Ghee" style="height: 30%; width: 30%;">
+          </div>
+
+          <br>
+          <h3 class="text-center"><strong>Health Benefits:</strong></h3>
+          <h4 class="text-center">Rich in healthy fats and omega-3</h4>
+          <h4 class="text-center">Improves digestion and boosts immunity</h4>
+          <h4 class="text-center">Good for brain health</h4>
+          <br>
+          <h3 class="text-center"><strong>How to Use:</strong></h3>
+          <h4 class="text-center">Add to warm rice or chapatis</h4>
+          <h4 class="text-center">Use in cooking or as a spread</h4>
+          <h4 class="text-center">Great for Ayurvedic treatments</h4>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Jaggery Modal -->
+  <div class="modal fade" id="modalJaggery" tabindex="-1" aria-labelledby="modalJaggeryLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-dark" style="position: sticky; top: 0; z-index: 1050;">
+          <h5 class="modal-title w-100 text-center">Jaggery - Natural Sweetener</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Scrollable Content -->
+        <div class="modal-body" style="max-height: 90vh; overflow-y: auto;">
+          <h4><strong>Description:</strong> Jaggery is an unrefined sugar made from sugarcane juice, retaining essential
+            nutrients.</h4>
+          <br>
+          <!-- Image Container -->
+          <div class="d-flex justify-content-center align-items-center flex-wrap">
+            <img
+              src="https://media.istockphoto.com/id/1409914597/photo/closeup-of-indian-palm-jaggery-in-a-wooden-ladle-isolated-on-palm-leaf-in-horizontal.webp?a=1&b=1&s=612x612&w=0&k=20&c=JQkE6hO3gIqByF9Ic_1nWppR5y1vOb7V9Z5u38Ekvq8="
+              class="rounded mb-3 mx-2" alt="Nati Ghee" style="height: 30%; width: 30%;">
+
+            <img
+              src="https://media.istockphoto.com/id/1414008587/photo/organic-gur-or-jaggery-powder-and-cubes-jaggery-is-used-as-an-ingredient-in-sweet-and-savoury.webp?a=1&b=1&s=612x612&w=0&k=20&c=uSpH2RVNPzp5JVUoWCY4eK7EbI7c1oinPKaT20dup4E="
+              class="rounded mb-3 mx-2" alt="Nati Ghee" style="height: 30%; width: 30%;">
+          </div>
+
+          <br>
+          <h3 class="text-center"><strong>Health Benefits:</strong></h3>
+          <h4 class="text-center">Detoxifies the liver</h4>
+          <h4 class="text-center">Rich in iron, prevents anemia</h4>
+          <h4 class="text-center">Boosts digestion and Immunity</h4>
+          <br>
+          <h3 class="text-center"><strong>How to Use:</strong></h3>
+          <h4 class="text-center">Use in tea or coffee as a natural sweetener</h4>
+          <h4 class="text-center">Add to desserts or sweets</h4>
+          <h4 class="text-center">Consume a small piece after meals for digestion</h4>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pink Salt Powder Modal -->
+  <div class="modal fade" id="modalPinkSalt" tabindex="-1" aria-labelledby="modalPinkSaltLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-dark" style="position: sticky; top: 0; z-index: 1050;">
+          <h5 class="modal-title w-100 text-center">Pink Salt Powder - Naturally Rich</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Scrollable Content -->
+        <div class="modal-body" style="max-height: 90vh; overflow-y: auto;">
+          <h4><strong>Description:</strong> Pink salt is a naturally occurring salt, free from additives, and packed
+            with essential minerals.</h4>
+          <br>
+          <!-- Image Container -->
+          <div class="d-flex justify-content-center align-items-center flex-wrap">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1726079119122-eea1b0741c6f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGluayUyMHNhbHR8ZW58MHx8MHx8fDA%3D"
+              class="rounded mb-3 mx-2" alt="Nati Ghee" style="height: 30%; width: 30%;">
+
+            <img
+              src="https://images.unsplash.com/photo-1605705712924-ab42d6bb9de7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGluayUyMHNhbHR8ZW58MHx8MHx8fDA%3D"
+              class="rounded mb-3 mx-2" alt="Nati Ghee" style="height: 30%; width: 30%;">
+          </div>
+
+          <br>
+          <h3 class="text-center"><strong>Health Benefits:</strong></h3>
+          <h4 class="text-center">Balances body pH</h4>
+          <h4 class="text-center">Improves hydration and reduces muscle cramps</h4>
+          <h4 class="text-center">Supports metabolism and nutrient absorption</h4>
+          <br>
+          <h3 class="text-center"><strong>How to Use:</strong></h3>
+          <h4 class="text-center">Can be used for bath and skincare</h4>
+          <h4 class="text-center">Great for seasoning, cooking, and detox drinks</h4>
+          <h4 class="text-center">Use as a healthier alternative to table salt</h4>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Groundnut Oil Modal -->
+  <div class="modal fade" id="modalGroundnutOil" tabindex="-1" aria-labelledby="modalGroundnutOilLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-dark" style="position: sticky; top: 0; z-index: 1050;">
+          <h5 class="modal-title w-100 text-center">Cold Pressed Coconut Oil - Pure & Natural</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Scrollable Content -->
+        <div class="modal-body" style="max-height: 90vh; overflow-y: auto;">
+          <h4><strong>Description:</strong> Cold Pressed Coconut Oil is extracted without heat, retaining its natural
+            nutrients and aroma.</h4>
+          <br>
+          <!-- Image Container -->
+          <div class="d-flex justify-content-center align-items-center flex-wrap">
+            <img
+              src="https://media.istockphoto.com/id/2177045603/photo/top-view-of-fresh-coconut-fruit-with-coconut-oil-in-a-glass-bottle.webp?a=1&b=1&s=612x612&w=0&k=20&c=HxlAfUrUIyWZQ-rUFvuBJlORE4WLYhOMMnj99V0FWC8="
+              class="rounded mb-3 mx-2" alt="Nati Ghee" style="height: 30%; width: 30%;">
+
+            <img
+              src="https://media.istockphoto.com/id/535418956/photo/coconut-oil-with-coconuts-on-white-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=fBifV30mwSQLVhj6w31b0lbln4eiG-O7FmP5Nq_zp_o="
+              class="rounded mb-3 mx-2" alt="Nati Ghee" style="height: 30%; width: 30%;">
+          </div>
+
+          <br>
+          <h3 class="text-center"><strong>Health Benefits:</strong></h3>
+          <h4 class="text-center">Boosts metabolism and aids weight loss</h4>
+          <h4 class="text-center">Rich in antioxidants and healthy fats</h4>
+          <h4 class="text-center">Great for skin and hair nourishment</h4>
+          <br>
+          <h3 class="text-center"><strong>How to Use:</strong></h3>
+          <h4 class="text-center">Use for cooking or salad dressing</h4>
+          <h4 class="text-center">Apply on hair for deep conditioning</h4>
+          <h4 class="text-center">Use as a moisturizer for glowing skin</h4>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Health Mix Powder Modal -->
+  <div class="modal fade" id="modalHealthMix" tabindex="-1" aria-labelledby="modalHealthMixLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header text-dark" style="position: sticky; top: 0; z-index: 1050;">
+          <h5 class="modal-title w-100 text-center">Health Mix Powder - A Powerhouse of Nutrition</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Scrollable Content -->
+        <div class="modal-body" style="max-height: 90vh; overflow-y: auto;">
+          <h4><strong>Description:</strong> Health Mix Powder is a blend of millets, nuts, grains, and seeds for
+            complete nutrition.</h4>
+          <br>
+          <!-- Image Container -->
+          <div class="d-flex justify-content-center align-items-center flex-wrap">
+            <img src="img\index\aboutimg.jpg" class="rounded mb-3 mx-2" alt="Nati Ghee"
+              style="height: 30%; width: 30%;">
+
+            <img src="img\index\mainimg.jpg" class="rounded mb-3 mx-2" alt="Nati Ghee" style="height: 30%; width: 30%;">
+          </div>
+
+          <br>
+          <h3 class="text-center"><strong>Health Benefits:</strong></h3>
+          <h4 class="text-center">Rich in proteins, vitamins, and minerals</h4>
+          <h4 class="text-center">Improves digestion and energy levels</h4>
+          <h4 class="text-center">Great for kids and adult</h4>
+          <br>
+          <h3 class="text-center"><strong>How to Use:</strong></h3>
+          <h4 class="text-center">Mix with warm milk or water for a healthy drink</h4>
+          <h4 class="text-center">Add to smoothies or porridge</h4>
+          <h4 class="text-center">Use in baking for a nutritious twist</h4>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+  <!-- Testimonial Start -->
+  <div class="container-fluid py-6" style="background: var(--gradient);">
+    <div class="container">
+      <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+        <small
+          class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Testimonial</small>
+        <h1 class="display-5 mb-5">What Our Customers says about Navmani!</h1>
+      </div>
+      <div class="owl-carousel owl-theme testimonial-carousel testimonial-carousel-1 mb-4 wow bounceInUp"
+        data-wow-delay="0.1s">
+        <div class="testimonial-item rounded bg-light">
+          <div class="d-flex mb-3">
+            <i class="fas fa-user fa-5x text-primary me-4"></i>
+            <div class="position-absolute" style="top: 15px; right: 20px;">
+              <i class="fa fa-quote-right fa-2x"></i>
+            </div>
+            <div class="ps-3 my-auto">
+              <h4 class="mb-0">Ramesh Kumar</h4>
+              <p class="m-0">Millet Farmer</p>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <div class="d-flex">
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+            </div>
+            <p class="fs-5 m-0 pt-3">
+              Navmani have been a game-changer for my farm. The yield is
+              higher and the demand is increasing.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-item rounded bg-light">
+          <div class="d-flex mb-3">
+            <i class="fas fa-user fa-5x text-primary me-4"></i>
+            <div class="position-absolute" style="top: 15px; right: 20px;">
+              <i class="fa fa-quote-right fa-2x"></i>
+            </div>
+            <div class="ps-3 my-auto">
+              <h4 class="mb-0">Sarita Devi</h4>
+              <p class="m-0">Millet Consumer</p>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <div class="d-flex">
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+            </div>
+            <p class="fs-5 m-0 pt-3">
+              I've been consuming Navmani for a year now, and I can see the
+              positive impact on my health.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-item rounded bg-light">
+          <div class="d-flex mb-3">
+            <i class="fas fa-user fa-5x text-primary me-4"></i>
+            <div class="position-absolute" style="top: 15px; right: 20px;">
+              <i class="fa fa-quote-right fa-2x"></i>
+            </div>
+            <div class="ps-3 my-auto">
+              <h4 class="mb-0">Dr. Suresh</h4>
+              <p class="m-0">Nutritionist</p>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <div class="d-flex">
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+            </div>
+            <p class="fs-5 m-0 pt-3">
+              Navmani are a nutrient-rich food option that can benefit people
+              of all ages.
+            </p>
+          </div>
+        </div>
+        <div class="testimonial-item rounded bg-light">
+          <div class="d-flex mb-3">
+            <i class="fas fa-user fa-5x text-primary me-4"></i>
+            <div class="position-absolute" style="top: 15px; right: 20px;">
+              <i class="fa fa-quote-right fa-2x"></i>
+            </div>
+            <div class="ps-3 my-auto">
+              <h4 class="mb-0">Rajesh Agarwal</h4>
+              <p class="m-0">Millet Entrepreneur</p>
+            </div>
+          </div>
+          <div class="testimonial-content">
+            <div class="d-flex">
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+              <i class="fas fa-star text-primary"></i>
+            </div>
+            <p class="fs-5 m-0 pt-3">
+              The demand for Navmani is increasing, and it's a great
+              opportunity for entrepreneurs like me.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div
+          class="owl-carousel testimonial-carousel testimonial-carousel-2 wow bounceInUp"
+          data-wow-delay="0.3s"
+        >
+          <div class="testimonial-item rounded bg-light">
+            <div class="d-flex mb-3">
+              <i class="fas fa-user fa-5x text-primary me-4"></i>
+              <div class="position-absolute" style="top: 15px; right: 20px;">
+                <i class="fa fa-quote-right fa-2x"></i>
+              </div>
+              <div class="ps-3 my-auto">
+                <h4 class="mb-0">Ramesh Kumar</h4>
+                <p class="m-0">Millet Farmer</p>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <div class="d-flex">
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+              </div>
+              <p class="fs-5 m-0 pt-3">
+                Navmani have been a game-changer for my farm. The yield is
+                higher and the demand is increasing.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-item rounded bg-light">
+            <div class="d-flex mb-3">
+              <i class="fas fa-user fa-5x text-primary me-4"></i>
+              <div class="position-absolute" style="top: 15px; right: 20px;">
+                <i class="fa fa-quote-right fa-2x"></i>
+              </div>
+              <div class="ps-3 my-auto">
+                <h4 class="mb-0">Sarita Devi</h4>
+                <p class="m-0">Millet Consumer</p>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <div class="d-flex">
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+              </div>
+              <p class="fs-5 m-0 pt-3">
+                I've been consuming Navmani for a year now, and I can see the
+                positive impact on my health.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-item rounded bg-light">
+            <div class="d-flex mb-3">
+              <i class="fas fa-user fa-5x text-primary me-4"></i>
+              <div class="position-absolute" style="top: 15px; right: 20px;">
+                <i class="fa fa-quote-right fa-2x"></i>
+              </div>
+              <div class="ps-3 my-auto">
+                <h4 class="mb-0">Dr. Suresh</h4>
+                <p class="m-0">Nutritionist</p>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <div class="d-flex">
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+              </div>
+              <p class="fs-5 m-0 pt-3">
+                Navmani are a nutrient-rich food option that can benefit people
+                of all ages.
+              </p>
+            </div>
+          </div>
+          <div class="testimonial-item rounded bg-light">
+            <div class="d-flex mb-3">
+              <i class="fas fa-user fa-5x text-primary me-4"></i>
+              <div class="position-absolute" style="top: 15px; right: 20px;">
+                <i class="fa fa-quote-right fa-2x"></i>
+              </div>
+              <div class="ps-3 my-auto">
+                <h4 class="mb-0">Rajesh Agarwal</h4>
+                <p class="m-0">Millet Entrepreneur</p>
+              </div>
+            </div>
+            <div class="testimonial-content">
+              <div class="d-flex">
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+                <i class="fas fa-star text-primary"></i>
+              </div>
+              <p class="fs-5 m-0 pt-3">
+                The demand for Navmani is increasing, and it's a great
+                opportunity for entrepreneurs like me.
+              </p>
+            </div>
+          </div>1
+        </div> -->
+    </div>
+  </div>
+  <!-- Testimonial End -->
+
+
+  <!-- Footer Start -->
+ <div class="container-fluid footer py-6 my-6 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <a href="/">
+              <img class="FooterLogo" src="./img/jewlogo.jpg" alt="" />
+            </a>
+            <p class="lh-lg mb-4">
+             Navamani—where tradition meets timeless elegance through the power of nine sacred beads.
+            </p>
+            <div class="footer-icon d-flex">
+              <a class="btn btn-primary btn-sm-square me-2 rounded-circle"
+                href="https://www.facebook.com/people/Navamani-Creations/100084371697757/?mibextid=ZbWKwL"><i
+                  class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/navamani_creations/?igshid=YmMyMTA2M2Y%3D"
+                class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+              <!-- <a href="https://www.linkedin.com/in/syncroots-22896a318/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">Quick Links</h4>
+            <div class="d-flex flex-column align-items-start">
+              <a class="text-body mb-3" href="index.html"><i class="fa fa-home text-primary me-2"></i>Home</a>
+              <a class="text-body mb-3" href="./about.html"><i class="fa fa-info-circle text-primary me-2"></i>About</a>
+              <a class="text-body mb-3" href="./service.html"><i class="fa fa-cogs text-primary me-2"></i>Services</a>
+              <a class="text-body mb-3" href="./contact.html"><i
+                  class="fa fa-envelope text-primary me-2"></i>Contact</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">Get in Touch</h4>
+            <div class="d-flex flex-column align-items-start">
+              <p>
+                <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                NAVAMANI CREATIONS 
+Banaswadi 
+Bangalore 
+Karnataka.<br>
+               
+
+              </p>
+              <p>
+                <i class="fa fa-phone-alt text-primary me-2"></i> 8105022111
+<br>
+                <i class="fa fa-phone-alt text-primary me-2"></i> 8105088600
+              </p>
+              <p>
+                <i class="fas fa-envelope text-primary me-2"></i>
+                <a href="mailto:navamani1316@gmail.com ">
+                  navamani1316@gmail.com 
+
+                </a>
+              </p>
+              <p>
+                <i class="fa fa-clock text-primary me-2"></i> 26/7 Hours
+                Service
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-item">
+            <h4 class="mb-4">Location</h4>
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe style="border-radius: 10px;" width="100%" height="100%" id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=123%20Street%2C%20New%20York%2C%20USA&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-lg-3 col-md-6">
+            <div class="footer-item">
+              <h4 class="mb-4">Millet News</h4>
+              <div class="row g-2">
+                <div class="col-4">
+                  <img
+                    src="img/millet-news-01.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/millet-news-02.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/millet-news-03.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/millet-news-04.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/millet-news-05.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+                <div class="col-4">
+                  <img
+                    src="img/millet-news-06.jpg"
+                    class="img-fluid rounded-circle border border-primary p-2"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+
+  <!-- Copyright Start -->
+  <div class="container-fluid copyright bg-dark py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>syncroots</a>, All right
+            reserved.</span>
+        </div>
+        <div class="col-md-6 my-auto text-center text-md-end text-white">
+          <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+          <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+          <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+          Developed By <a class="border-bottom" href="https://aspironkhuze.com/">Aspironkhuze Technologies Pvt. Ltd.</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Copyright End -->
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-dark back-to-top" id="backToTop">
+    <i class="fa fa-angle-double-up"></i>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/+919755511107" class="btn btn-lg btn-success whatsapp-button">
+    <i class="fab fa-whatsapp" style="color: white;"></i>
+  </a>
+
+  <style>
+    /* Responsive Social Icons */
+    .social-btn {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      z-index: 1000;
+      width: 50px;
+      height: 50px;
+      display: none;
+      /* Hidden by default */
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Ensure buttons and elements don't break on small screens */
+    @media (max-width: 768px) {
+      .social-btn {
+        width: 30px;
+        height: 30px;
+      }
+
+      .back-to-top,
+      .whatsapp-button {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
+    @media (max-width: 576px) {
+
+      .back-to-top,
+      .whatsapp-button {
+        width: 40px;
+        height: 40px;
+      }
+
+      .whatsapp-button {
+        bottom: 15px;
+        right: 15px;
+      }
+    }
+  </style>
+
+  <script>
+    // Show the "Back to Top" button only when scrolled down
+    const backToTopButton = document.getElementById('backToTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) { // Show when scrolled down 100px
+        backToTopButton.style.display = 'flex';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    });
+  </script>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
