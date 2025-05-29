@@ -29,7 +29,8 @@ h3,
 .h2,
 .h3 {
     font-weight: 400 !important;
-    font-family: 'Playball', cursive !important;
+    font-family: 'Times New Roman', Times, serif, cursive !important;
+    color: rgb(6, 72, 15);
 }
 
 h4,
